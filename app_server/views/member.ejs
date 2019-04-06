@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    
+    <a href="../login">system link</a>
+    <p>welcome <%= name %></p>
+    <p>loyalty points :<%= point %></p>
+
+    <form action="../member/buy" method="GET">
+        <fieldset>
+                <legend>buyform</legend>
+    <table border=1>
+        <tr><th>song name</th><th>price</th><th>listen link</th><th>album details</th><th>number</th></tr>
+        <%# for (var i=0;i<n.length;i++){ %>
+         <tr><td><%= songname %></td><td><%= songprice %></td><td><a href="">songlink</a></td><td>detail[i]</td><td><input type="number" name="quantity1" min="1" max="<%= inventory %>"></td></tr>   
+        <tr>use of loyalty points:<input type="number" name="points use" min="0" max="<%= point %>"></tr>
+    </table>
+         <input type="submit" value="buy">
+        </fieldset>
+
+    </form>
+    <form action="../member/refund" method="GET">
+        <fieldset>
+            <legend>refund form</legend>
+            <table>
+            <tr><th>buy case no.</th><th>buy date</th><th>buy thing</th><th>refund</th></tr>
+            <tr><td>1</td><td>2019-03-28</td><td>song1,song2</td><td><input type="submit" value="redund[case no.]"></td></tr>
+            </table>
+        </fieldset>
+    </form>
+  </body>
+</html>

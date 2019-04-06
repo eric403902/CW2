@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="../login">system link</a>
+
+    <p>welcome manger[i]</p>
+    <form action="../staff/change" method="GET">
+        <fieldset>
+                <legend>song in store</legend>
+                <table>
+                    <tr><th>song name</th><th>price</th><th>detail</th><th>inventory</th><th></th></tr>
+                    <tr><td><input  type="text" name="songnamei" value="name[i]"></td>
+                        <td><input  type="text" name="pricei" value="price[i]"></td>
+                        <td><input  type="text" name="detaili" value="detail[i]">
+                        <td><input  type="text" name="inventoryi" value="inventory[i]"></td>
+                        <td><a href="../staff/delete/songnamei">delete</a></td></tr>
+                </table>
+        </fieldset>
+        <input type="submit" value="change">
+    </form>
+    <form action="../staff/creat" method="GET">
+        <fieldset>
+                <legend>creat song product</legend>
+                <table>
+                    <tr><th>song name</th><th>price</th><th>detail</th><th>inventory</th></tr>
+                    <tr><td><input  type="text" name="songname" value="newname"></td>
+                        <td><input  type="text" name="price" value="newprice"></td>
+                        <td><input  type="text" name="detail" value="newdetail">
+                        <td><input  type="text" name="inventory" value="newinventory"></td>
+                    </tr>
+                </table>
+        </fieldset>
+        <input type="submit" value="creat">
+    </form>
+    <fieldset>
+    <legend>view statistics</legend>
+    <table border=1>
+        <tr><th>song name</th><th>purchase number</th></tr>
+        <tr><td>name[i]</td><td>purchase_no[i]</td></tr>
+            <tfoot>
+                <tr>
+                    <td>total</td><td>sum[purchase[i]]</td>
+                </tr>
+            </tfoot>
+       
+    </table>
+    </fieldset>
+    <fieldset>
+            <legend>view statistics (loyalty points and refund)</legend>
+            <table border=1>
+                <tr><th>total loyalty points use</th><th>successful refund</th><th>rejected refund</th></tr>
+                <tr><td>sum[loyalty_points_use]</td><td>sum[S]</td><td>sum[R]</td></tr>
+            </table>
+    </fieldset>
+
+
+  </body>
+</html>
