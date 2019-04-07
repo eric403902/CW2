@@ -10,21 +10,31 @@
     <a href="../login">system link</a>
 
     <p>welcome manger[i]</p>
-    <form action="../staff/change" method="GET">
+    <form action="../staff/change" method="PUT">
         <fieldset>
                 <legend>song in store</legend>
                 <table>
-                    <tr><th>song name</th><th>price</th><th>detail</th><th>inventory</th><th></th></tr>
+                    <tr><th>song name</th><th>price</th><th>detail</th><th>inventory</th></tr>
                     <tr><td><input  type="text" name="songnamei" value="name[i]"></td>
                         <td><input  type="text" name="pricei" value="price[i]"></td>
                         <td><input  type="text" name="detaili" value="detail[i]">
                         <td><input  type="text" name="inventoryi" value="inventory[i]"></td>
-                        <td><a href="../staff/delete/songnamei">delete</a></td></tr>
+                    </tr>
                 </table>
         </fieldset>
         <input type="submit" value="change">
     </form>
-    <form action="../staff/creat" method="GET">
+
+    <form action="../staff/del" method="delete">
+        <fieldset>
+            <legend>delete song product</legend>
+            <p>delete song's name:</p>
+            <input  type="text" name="delsongname" value="delname">
+            <input type="submit" value="delete">
+        </fieldset>
+    </form>
+
+    <form action="../staff/creat" method="POST">
         <fieldset>
                 <legend>creat song product</legend>
                 <table>
@@ -38,6 +48,8 @@
         </fieldset>
         <input type="submit" value="creat">
     </form>
+
+
     <fieldset>
     <legend>view statistics</legend>
     <table border=1>
@@ -51,6 +63,7 @@
        
     </table>
     </fieldset>
+    
     <fieldset>
             <legend>view statistics (loyalty points and refund)</legend>
             <table border=1>

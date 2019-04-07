@@ -1,3 +1,31 @@
 <html>
-    <p>a</p>
+    <body>
+    <table border=2>
+        <tr><td><p>We will have 3 tables in database : user, staff and transaction 
+        <p>1 main function in login(validation)</p>
+        <p>3 main  function in member page(display,buy,refund) </p>
+        <p>4 main function in staff page(display,change,creat and delete)</p>
+        <p>The delete and put method are not support in HTML5 form, hidden input _method will be use later. example:"input type="hidden" name="_method" value="PUT"</p></td></tr>
+        <tr><td><p>route of index page:</p>
+        <p>"/" : main page which provide link of my design page("../my_design") and login page("../login")</p></td></tr>
+        <tr><td><p>route of login page:</p>   
+        <p>"/" : link to display function in login.js in controllers folder</p>
+        <p>"/validate" : link to validation function(valid) in login.js in controllers folder with data in submitted form and access database with login.js in models folder with post method</p></td></tr>
+        <tr><td><p>route of member page:</p>
+        <p>"/" : link to display function in member.js in controllers folder and access database with member.js in models folder with get method</p>
+        <p>"/buy" : link to buy function in member.js in controllers folder and access database with member.js in models folder with post method</p>
+        <p>"/refund" link to refund function in member.js in controllers and access database with member.js in models folder with put method</p></td></tr>
+        <tr><td><p>route of staff page:</p>
+        <p>"/" : link to display function in staff.js in controllers folder and access database with staff.js in models folder with get method</p>
+        <p>"/change" : link to function change in staff.js in controllers folder and access database with staff.js in models folder with put method</p>
+        <p>"/del" : link to delete function in staff.js in controllers folder and access database with staff.js in models folder with delete method</p>
+        <p>"/creat" : link to creat function in staff.js in controllers folder and access database with staff.js in models folder with post method</p></td></tr>
+        <tr><td><p>distribution of work</p>
+        <p>route in login page:BALLESTEROS RAMIREZ Sebastian & Li Pak Leung</p>
+        <p>route in member page:BALLESTEROS RAMIREZ Sebastian</p>
+        <p>route in staff page:Li Pak Leung</p>
+        <p>database design and setup:BALLESTEROS RAMIREZ Sebastian</p>
+        <p>templates, RESTful api: Li Pak Leung</p></td></tr>
+    </table>
+    </body>
 </html>

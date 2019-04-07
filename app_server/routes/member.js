@@ -5,6 +5,6 @@ var controllermember = require('../controllers/member');
 /* GET home page. */
 router.get('/', controllermember.display);
 
-router.get('/buy', controllermember.buy);
-router.get('/refund', controllermember.refund);
+router.post('/buy', controllermember.buy);
+router.put('/refund', controllermember.refund);
 module.exports = router;

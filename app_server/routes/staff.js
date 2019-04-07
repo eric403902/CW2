@@ -4,8 +4,8 @@ var controllerstaff = require('../controllers/staff');
 
 /* GET home page. */
 router.get('/', controllerstaff.display);
-router.get('/change', controllerstaff.change);
-router.get('/delete/:dsong', controllerstaff.delete);
-router.get('/creat', controllerstaff.creat);
+router.put('/change', controllerstaff.change);
+router.delete('/del', controllerstaff.delete);
+router.post('/creat', controllerstaff.creat);
 
 module.exports = router;

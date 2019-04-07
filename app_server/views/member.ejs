@@ -11,7 +11,7 @@
     <p>welcome <%= name %></p>
     <p>loyalty points :<%= point %></p>
 
-    <form action="../member/buy" method="GET">
+    <form action="../member/buy" method="POST">
         <fieldset>
                 <legend>buyform</legend>
     <table border=1>
@@ -24,12 +24,13 @@
         </fieldset>
 
     </form>
-    <form action="../member/refund" method="GET">
+    <form action="../member/refund" method="PUT">
         <fieldset>
             <legend>refund form</legend>
             <table>
             <tr><th>buy case no.</th><th>buy date</th><th>buy thing</th><th>refund</th></tr>
-            <tr><td>1</td><td>2019-03-28</td><td>song1,song2</td><td><input type="submit" value="redund[case no.]"></td></tr>
+            <tr><td>1</td><td>2019-03-28</td><td>song1,song2</td>
+                <td><input type="submit" value="redund[case no.]"></td></tr>
             </table>
         </fieldset>
     </form>
