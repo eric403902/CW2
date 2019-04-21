@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+
+<% include ./partials/header.ejs %>
+
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <a href="../login">system link</a>
@@ -60,10 +56,10 @@
                     <td>total</td><td>sum[purchase[i]]</td>
                 </tr>
             </tfoot>
-       
+
     </table>
     </fieldset>
-    
+
     <fieldset>
             <legend>view statistics (loyalty points and refund)</legend>
             <table border=1>
@@ -72,6 +68,4 @@
             </table>
     </fieldset>
 
-
-  </body>
-</html>
+  <% include ./partials/footer.ejs %>

@@ -1,17 +1,191 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<% include ./partials/header.ejs %>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <section>
+    <div class='index-image' style=' background-image: url("https://djmag.com/sites/default/files/article/image/iil8azu.jpg"); height:50vh; background-size: cover;
+    background-position: left;'>
+      <div class="container">
+      <h1 class="jumbotron-heading" style='color: white; font-size: 10vh; padding-top: 10vh;'>Our MusicLibrary Project</h1>
+      <p class="lead " style='color: white; font-size: 3vh;'> This is just a minimalist design I implemented for creting a basic scheme and order in the web page, later we can change it an make it better .</p>
+      <p style="padding-left: 45vh;">
+        <a href="/albums/manage" style="padding:1.5vh;" class="btn btn-primary my-2"> Manage library </a>
+        <a href="../my_design"  style="padding:1.5vh;" class="btn btn-secondary my-2">  My Design </a>
+      </p>
+      </div>
+   </div>
+   </section
+   <section>
 
-    <ul>
-      <li><a href="../login">system link</a></li>
-      <li><a href="../my_design">my design</a></li>
-    </ul>
+     <div class="album bg-light">
+    <div style='margin: 15px' >
 
-  </body>
-</html>
+      <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="card mb-4 shadow-sm">
+                    <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://www.billboard.com/files/styles/review_main_image/public/ed-sheeran-x-410.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+                    <div class="card-body">
+                      <p class="card-text"> X -Ed Sheeran </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-4 shadow-sm">
+            <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://images-na.ssl-images-amazon.com/images/I/91WUWURTijL._SL1500_.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="card-body">
+              <p class="card-text"> Wilder Mind - Mumford and Sons </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-4 shadow-sm">
+            <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://images-na.ssl-images-amazon.com/images/I/51O-UYQBsxL._SL1500_.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="card-body">
+              <p class="card-text"> Ultimate - Air Supply </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-4 shadow-sm">
+            <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://tf7i72apx4545vzwn3oriyy1-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/thriller-758x758.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="card-body">
+              <p class="card-text"> Thriller  - Michael Jackson </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-4 shadow-sm">
+            <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/6f/a3/60/6fa36088-6df3-1a5a-a45f-de689721b3dc/4050538298680.jpg/1200x630bb.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="card-body">
+              <p class="card-text"> The Click  - AJR </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-4 shadow-sm">
+            <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="http://cdn.shopify.com/s/files/1/1226/9490/products/e27aeb3b-dd81-471c-aac7-ac45ee4bd436_grande.jpg?v=1460639335" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="card-body">
+              <p class="card-text"> What's the story morning glory? -  Oasis </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="card mb-4 shadow-sm">
+                  <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://cdn.shopify.com/s/files/1/1156/2890/products/ArcticMonkeys-AM.jpeg?v=1480629978" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div class="card-body">
+                    <p class="card-text"> AM - Arctic Monkeys </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-4 shadow-sm">
+            <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://i5.walmartimages.com/asr/d35167f3-33e5-422b-965d-c97891f99b14_1.59d039d8743a4abf33c521f070cb2371.jpeg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="card-body">
+              <p class="card-text"> Battle Born - The Killers  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-4 shadow-sm">
+            <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://cps-static.rovicorp.com/3/JPG_500/MI0001/641/MI0001641176.jpg?partner=allrovi.com" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="card-body">
+              <p class="card-text"> Gold - ABBA </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mb-4 shadow-sm">
+            <image class="bd-placeholder-img card-img-top" width="100%" height="60%" src="https://albumart.besteveralbums.com/albumart/album_large_12092_4e54090db255a.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="card-body">
+              <p class="card-text"> The Script - The Script </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+   </section>
+<% include ./partials/footer.ejs %>

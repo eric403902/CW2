@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+
+<% include ./partials/header.ejs %>
     <h1><%= title %></h1>
-    
+
     <a href="../login">system link</a>
     <p>welcome <%= name %></p>
     <p>loyalty points :<%= point %></p>
@@ -17,7 +12,7 @@
     <table border=1>
         <tr><th>song name</th><th>price</th><th>listen link</th><th>album details</th><th>number</th></tr>
         <%# for (var i=0;i<n.length;i++){ %>
-         <tr><td><%= songname %></td><td><%= songprice %></td><td><a href="">songlink</a></td><td>detail[i]</td><td><input type="number" name="quantity1" min="1" max="<%= inventory %>"></td></tr>   
+         <tr><td><%= songname %></td><td><%= songprice %></td><td><a href="">songlink</a></td><td>detail[i]</td><td><input type="number" name="quantity1" min="1" max="<%= inventory %>"></td></tr>
         <tr>use of loyalty points:<input type="number" name="points use" min="0" max="<%= point %>"></tr>
     </table>
          <input type="submit" value="buy">
@@ -34,5 +29,5 @@
             </table>
         </fieldset>
     </form>
-  </body>
-</html>
+
+  <% include ./partials/footer.ejs %>
