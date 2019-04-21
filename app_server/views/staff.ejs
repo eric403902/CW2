@@ -1,11 +1,199 @@
 
 <% include ./partials/header.ejs %>
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <a href="../login">system link</a>
+    <section>
+    <div class='index-image' style=' background-image: url("https://coverfiles.alphacoders.com/389/38981.jpg"); height:50vh; background-size: cover;
+    background-position: left; '>
+      <div class="container">
+      <h1 class="jumbotron-heading" style='color: white; font-size: 10vh; padding-top: 8vh;'> Welcome to  <%= title %> management</h1>
+      <p class="lead " style='color: white; font-size: 3vh;'> Manager's Name </p>
+      <p style="padding-left: 45vh;">
+        <a href="/albums/manage" style="padding:1.5vh;" class="btn btn-primary my-2"> Manage library </a>
+        <a href="../login"  style="padding:1.5vh;" class="btn btn-secondary my-2"> Logout </a>
+      </p>
+      </div>
+   </div>
+ </section>
 
-    <p>welcome manger[i]</p>
+ <div class="container-fluid" style="margin-top: 15px;">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  Statistics
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  Album Library
+                </a>
+              </li>
+            </ul>
+
+
+          </div>
+        </nav>
+
+        <main style="margin-top: -3vh;" role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+            <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+              <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+              </div>
+            </div>
+            <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+              <div style="position:absolute;width:200%;height:200%;left:0; top:0">
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <h2> Albums </h2>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          </a>
+        </div>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>Cost</th>
+                  <th>Name</th>
+                  <th>Artist</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>Wilder Mind</td>
+                  <td> Mumford and Sons </td>
+                  <td>    <a href="./edit"  class="btn btn-primary my-2"> Edit </a></td>
+                  <td>  <a href="./delete"  class="btn btn-danger my-2"> Delete </a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+
     <form action="../staff/change" method="PUT">
         <fieldset>
                 <legend>song in store</legend>
@@ -45,27 +233,5 @@
         <input type="submit" value="creat">
     </form>
 
-
-    <fieldset>
-    <legend>view statistics</legend>
-    <table border=1>
-        <tr><th>song name</th><th>purchase number</th></tr>
-        <tr><td>name[i]</td><td>purchase_no[i]</td></tr>
-            <tfoot>
-                <tr>
-                    <td>total</td><td>sum[purchase[i]]</td>
-                </tr>
-            </tfoot>
-
-    </table>
-    </fieldset>
-
-    <fieldset>
-            <legend>view statistics (loyalty points and refund)</legend>
-            <table border=1>
-                <tr><th>total loyalty points use</th><th>successful refund</th><th>rejected refund</th></tr>
-                <tr><td>sum[loyalty_points_use]</td><td>sum[S]</td><td>sum[R]</td></tr>
-            </table>
-    </fieldset>
 
   <% include ./partials/footer.ejs %>
