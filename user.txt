@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS user;
+CREATE TABLE user(
+username VARCHAR(10) NOT NULL,
+password VARCHAR(10) NOT NULL,
+point INT(8) NOT NULL,
+money INT(8) NOT NULL,
+userstate CHAR NOT NULL,
+PRIMARY KEY(username)
+);
+INSERT INTO user (username,password,point,money,userstate)
+VALUES ('member1','p1',100,1000,'m');
+INSERT INTO user (username,password,point,money,userstate)
+VALUES ('member2','p2',200,2000,'m');
+INSERT INTO user (username,password,point,money,userstate)
+VALUES ('manager1','s1',0,0,'s');

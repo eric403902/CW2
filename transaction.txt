@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS transaction;
+CREATE TABLE transaction(
+tid INT(8) NOT NULL,
+date DATE NOT NULL,
+buyer VARCHAR(10) NOT NULL,
+tstate CHAR(10) NOT NULL,
+money_use INT(8) NOT NULL,
+point_use INT(8) NOT NULL,
+PRIMARY KEY(tid)
+);
+INSERT INTO transaction (tid,date,buyer,tstate,money_use,point_use)
+VALUES (1,'2018-02-20','member1','CN',10,1);
+INSERT INTO transaction (tid,date,buyer,tstate,money_use,point_use)
+VALUES (2,'2019-01-18','member1','C',30,0);

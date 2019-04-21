@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS buylist;
+CREATE TABLE buylist(
+owner VARCHAR(10) NOT NULL,
+path VARCHAR(100) NOT NULL,
+songname VARCHAR(10) NOT NULL,
+tid INT(8) NOT NULL
+);
+INSERT INTO buylist (owner,path,songname,tid)
+VALUES ('member1','../music/song1.mp3','song1',1);
+INSERT INTO buylist (owner,path,songname,tid)
+VALUES ('member1','../music/song1.mp3','song1',2);
+INSERT INTO buylist (owner,path,songname,tid)
+VALUES ('member1','../music/song2.mp3','song2',2);
+

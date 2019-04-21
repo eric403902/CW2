@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS song;
+CREATE TABLE song(
+sid INT(8) NOT NULL,
+songname VARCHAR(10) NOT NULL,
+price INT(8) NOT NULL,
+detail VARCHAR(100) NOT NULL,
+inventory INT(10) NOT NULL,
+path VARCHAR(100) NOT NULL,
+testpath VARCHAR(100) NOT NULL,
+sell INT(8) NOT NULL,
+PRIMARY KEY(sid)
+);
+INSERT INTO song (sid,songname,price,detail,inventory,path,testpath,sell)
+VALUES (1,'song1',10,'detail1',100,'../music/song1.mp3','../test/song1.mp3',2);
+INSERT INTO song (sid,songname,price,detail,inventory,path,testpath,sell)
+VALUES (2,'song2',20,'detail2',200,'../music/song2.mp3','../test/song2.mp3',1);
