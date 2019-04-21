@@ -10,7 +10,6 @@ var loginRouter = require('./app_server/routes/login');
 var memberRouter = require('./app_server/routes/member');
 var staffRouter = require('./app_server/routes/staff');
 var designRouter = require('./app_server/routes/my_design');
-var editRouter = require('./app_server/routes/edit');
 var albumRouter = require('./app_server/routes/album');
 var app = express();
 
@@ -30,7 +29,6 @@ app.use('/login', loginRouter);
 app.use('/member', memberRouter);
 app.use('/staff', staffRouter);
 app.use('/my_design', designRouter);
-app.use('/edit', editRouter);
 app.use('/album', albumRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
