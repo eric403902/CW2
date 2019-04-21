@@ -1,20 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>login system</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>login system</h1>
-    <p>Welcome to login system</p>
-    <p>input username"member" to access member page ,input username "staff" to access staff page</p>
-    <form action="/login/validate" method="POST">
-      <label for="username">username: </label>
-      <input id="username" type="text" name="username" value="">
-      <label for="username">password: </label>
-      <input id="password" type="text" name="password" value="">
-      <input type="submit" value="login">
-    </form>
-
-  </body>
-</html>
+<% include ./partials/header.ejs %>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center"> Welcome to Login System</h5>
+            Input username"member" to access member page <br>
+            Input username "staff" to access staff page <br>
+              <br>
+            <form action="/login/validate" method="POST" class="form-signin">
+              <div class="form-label-group">
+                <input type="text" id="username" name="username" class="form-control" placeholder="Email Address" required autofocus>
+                <label for="username">Email Address</label>
+              </div>
+              <div class="form-label-group">
+                <input type="text" id="password" name="password" class="form-control" placeholder="Password" >
+                <label for="inputPassword">Password</label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" value="login">Sign in</button>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Register </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>

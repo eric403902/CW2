@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+.index-image {
+  background-image: url("https://djmag.com/sites/default/files/article/image/iil8azu.jpg");
+  height:20vh;
+}
