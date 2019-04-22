@@ -3,7 +3,7 @@ var createError = require('http-errors');
 
 
 module.exports.display = function(req, res, next) {
-    res.render('album.ejs',{title: 'MusicLibrary'});
+    res.render('view.ejs',{title: 'MusicLibrary'});
   }
 
 module.exports.edit = function(req, res, next) {
