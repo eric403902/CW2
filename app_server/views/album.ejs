@@ -3,10 +3,10 @@
     <div class='row'>
       <div class='col-md-6 col-sm-12'>
     <div class="card" >
-      <img src="https://www.billboard.com/files/styles/review_main_image/public/ed-sheeran-x-410.jpg" class="card-img-top" alt="...">
+      <img src=<%= album.IMAGEURL %>  class="card-img-top" alt="...">
       <div class="card-body">
-        <p class="lead " style='color: black; font-size: 3vh; text-align:center;'> X  </p>
-        <p class="lead " style='color: black; font-size: 3vh; text-align:center;'> Ed Sheeran </p>
+        <p class="lead " style='color: black; font-size: 3vh; text-align:center;'> <%= album.ALBUMNAME %>  </p>
+        <p class="lead " style='color: black; font-size: 3vh; text-align:center;'> <%= album.ARTIST %>  </p>
       </div>
     </div>
     </div>
@@ -16,15 +16,9 @@
       Songs
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"> One </li>
-      <li class="list-group-item"> I'm a Mess </li>
-      <li class="list-group-item"> Sing </li>
-      <li class="list-group-item"> Don't </li>
-      <li class="list-group-item"> Nina </li>
-      <li class="list-group-item"> Photograph </li>
-      <li class="list-group-item"> Bloodstream </li>
-      <li class="list-group-item"> Tenerife Sea </li>
-      <li class="list-group-item"> Thinking Out Loud </li>
+      <% songs.forEach(function(song) { %>
+        <li class="list-group-item"> <%= song.SONGNAME %> <a href="/song/buy/<%= song.SID %>" style="float:right;" class="btn btn-primary  text-uppercase" type="cancel">  BUY:  <%=song.PRICE%> </a> </li>
+        <% }); %>
 
     </ul>
   </div>
