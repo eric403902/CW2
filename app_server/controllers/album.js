@@ -22,8 +22,14 @@ module.exports.display = function(req, res, next) {
   };
 
 module.exports.edit = function(req, res, next) {
-    res.render('edit.ejs',{title: 'MusicLibrary'});
-  };
+  var albumid = req.originalUrl.substr(req.originalUrl.length - 8);
+  pool.query(`SELECT * FROM ALBUM WHERE ALBUMID='${albumid}';`, function (err, result, fields) {
+      if (err) throw new Error(err)
+      album = result[0]
+      console.log(result);
+      res.render('edit.ejs',{title: 'MusicLibrary', album: album});
+  });
+};
 
 module.exports.delete = function(req, res, next) {
     res.render('staff.ejs',{title: 'MusicLibrary'});
